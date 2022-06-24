@@ -1,2 +1,2 @@
 # Yard-Sale
-First proyect developing html and css.
+First proyect developing html and css skills.
