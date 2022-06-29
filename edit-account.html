@@ -65,33 +65,23 @@
             margin-bottom: 4px;
             font-weight: bold;
         }
-        .input{
-            background-color: var(--text-input-field);
-            border: none;
-            border-radius: 8px;
-            height: 30px;
-            font-size: --md;
-            padding: 6px; /* para que los *** no queden tan pegados a la caja */
-            /*margin-bottom: 16px; parece que es mejor ocupar las clases de lo inputs especificos */
+        .data{
+            color: var(--very-light-pink);
+            font-size: var(--md);
+            margin: 8px 0 32px 0; /* de arriba sentillo manecillas reloj */
         }
-        .input-name, /*forma elegante de decir que para todos esos inputs has ...*/
-        .input-email,
-        .input-password{
-            margin-bottom: 28px;
-        }
-
-        .primary-button{
-            background-color: var(--hospital--green);
-            color: var(--white);
+        .secundary-button{
+            background-color: var(--white);
+            color: var(--hospital--green);
             font-size: var(--md);
             font-weight: bold; /* grueso */
-            border: none;
+            border: 1px solid var(--hospital--green);
             border-radius: 6px;
             height: 50px;
             width:100%;
             cursor: pointer; /*salga una manito al apuntarlo*/
         }
-        .login-button{
+        .edit-button{
             margin-top:14px;
             margin-bottom:30px ;
         }
@@ -109,7 +99,7 @@
                 height: 100%;
                 justify-content: space-between;
             }
-            .primary-button{
+            .secundary-button{
                 width:300px;
                 position: absolute;
                 bottom: 0;
@@ -125,15 +115,15 @@
             <form action="/" class="form">
                 <div class="form">
                     <label for="name" class="label">Name</label>
-                    <input type="text" id="name" placeholder="User name" class="input input-name">
+                    <p class="data">User name</p>
 
                     <label for="email" class="label">Email addres</label>
-                    <input type="text" id="email" placeholder="username@gmail.com" class="input input-email">
+                    <p class="data">user.email@gmail.com</p>
 
                     <label for="password" class="label">Password</label>
-                    <input type="password" id="password" placeholder="*********" class="input input-pasword">
+                    <p class="data">*********</p>
 
-                    <input type="submit" value="Save" class="primary-button login-button">
+                    <input type="submit" value="Edit" class="secundary-button edit-button">
                 </div>
             </form>
 
